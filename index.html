@@ -11,21 +11,27 @@
     <style type="text/css">
     body{
         background-color: #44443c;
-        font-size: 1.5em;
+        color: #a1a19d;
+        font-size: 1.2em;
         margin-left: 25%;
-        max-width: 480px;
+        max-width: 36em;
     }
     a{
         color: #629202;
-        line-height: 1.6em;
+
+    }
+    li a{
+        font-size: 1.5em;
     }
     a:hover{
         text-decoration: none;
     }
     li{
         list-style: none;
-        color: #629202;
-
+    }
+    li span{
+        display: inline;
+        margin-left: 0.6em;
     }
     ul{
         padding-left: 0px;
@@ -48,8 +54,15 @@
         var converter = new Showdown.converter();
         var htmlText = converter.makeHtml(mdText);
         $(".outputDiv").append(htmlText); //append this to a div with class outputDiv
+
+        $(".outputDiv li a").each(function(){
+            var href = $(this).attr("href")
+            $(this).after(" <span>("+ href+ ")</span>");
+        });
+
       }
     });
+
 </script>
 
 

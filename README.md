@@ -16,4 +16,8 @@
 + [Nodeup](http://nodeup.com/)
 + [Nodeguide](http://nodeguide.com/)
 + [Smashing node](http://smashingnode.com/)
-+ [Node.js in Action](http://www.manning.com/cantelon/) - Book
++ [Node.js in Action](http://www.manning.com/cantelon/)
+
+#Contributing
+
+Know of a good node tutorial or book? [Fork this repo](https://github.com/agiliq/learnnode.com) and send a pull request.
