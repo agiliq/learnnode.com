@@ -1,7 +1,19 @@
-learnnode.com
-=============
+![](node-logo.png)
 
-I am creating a listing of resources for learning node. Pull requests welcome. 
+#Want to learn node? Here are some good guides.
 
-The site is at [learnnode.com](http://learnnode.com). It's just a very simple html, with no static page generator. 
-Add any new listing as `<li>`.
+
++ [API for node](http://nodejs.org/api/)
++ [Blog](http://blog.nodejs.org/)
++ [Community](http://nodejs.org/community/)
++ [Nodecasts](http://nodecasts.net/)
++ [Nodetuts](http://nodetuts.com/)
++ [Nodeschool](http://nodeschool.io/)
++ [Node Codeschool](http://node.codeschool.com/)
++ [Node Beginner](http://www.nodebeginner.org/)
++ [Node Mixu](http://book.mixu.net/node/)
++ [How to Node](http://howtonode.org/)
++ [Nodeup](http://nodeup.com/)
++ [Nodeguide](http://nodeguide.com/)
++ [Smashing node](http://smashingnode.com/)
++ [Node.js in Action](http://www.manning.com/cantelon/) - Book

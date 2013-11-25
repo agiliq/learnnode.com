@@ -4,6 +4,10 @@
     <title>
         Learn Node - Node Learning resources
     </title>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="utf-8" http-equiv="encoding">
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/showdown/0.3.1/showdown.min.js"></script>
     <style type="text/css">
     body{
         background-color: #44443c;
@@ -33,40 +37,20 @@
     </style>
 </head>
 <body>
-
-<img src="node-logo.png" />
-
-<h1>Want to learn node? Here are some good guides.</h1>
-
-<ul>
-  <!-- <li><a href=""></a></li> -->
-  <li><a href="http://nodejs.org/api/">http://nodejs.org/api/</a></li>
-  <li><a href="http://blog.nodejs.org/">http://blog.nodejs.org/</a></li>
-  <li><a href="http://nodejs.org/community/">http://nodejs.org/community/</a></li>
-  <li><a href="http://nodecasts.net/">http://nodecasts.net/</a></li>
-  <li><a href="http://nodetuts.com/">http://nodetuts.com/</a></li>
-  <li><a href="http://nodeschool.io/">http://nodeschool.io/</a></li>
-  <li><a href="http://node.codeschool.com/">http://node.codeschool.com/</a></li>
-  <li><a href="http://www.nodebeginner.org/">http://www.nodebeginner.org/</a></li>
-  <li><a href="http://book.mixu.net/node/">http://book.mixu.net/node/</a></li>
-  <li><a href="http://howtonode.org/">http://howtonode.org/</a></li>
-  <li><a href="http://nodeup.com/">http://nodeup.com/</a></li>
-  <li><a href="http://nodeguide.com/">http://nodeguide.com/</a></li>
-  <li><a href="http://www.nodebeginner.org/">http://www.nodebeginner.org/</a></li>
-  <li><a href="http://smashingnode.com/">http://smashingnode.com/</a></li>
-  <li><a href="http://www.manning.com/cantelon/">http://www.manning.com/cantelon/</a></li>
+    <div class="outputDiv"></div>
+<script>
+    $.ajax({
+      url: "README.md",
+      context: document.body,
+      success: function(mdText){
+        //where text will be the text returned by the ajax call
+        var converter = new Showdown.converter();
+        var htmlText = converter.makeHtml(mdText);
+        $(".outputDiv").append(htmlText); //append this to a div with class outputDiv
+      }
+    });
+</script>
 
 
-
-
-
-
-
-
-
-
-
-
-</ul>
 </body>
 </html>
