@@ -17,6 +17,7 @@
 + [Nodeguide](http://nodeguide.com/)
 + [Smashing node](http://smashingnode.com/)
 + [Node.js in Action](http://www.manning.com/cantelon/)
++ [Node.js Tutorial](http://apetuts.com/tutorial/node-js-tutorial/)
 
 #Contributing
 
